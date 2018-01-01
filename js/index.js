@@ -16,4 +16,11 @@ $(document).ready(function(){
             }
         }
     });
+    
+    console.log("this is not cached!");
+    $('#opt').hover(function(){
+        var text = $(this).attr('content');
+        console.log('lol');
+        $('.content').css('transform','scale(0)').css('opacity','0');
+    });
 })
